@@ -14,5 +14,9 @@ def add_or_remove_cash(dict, cash_difference):
     dict["admin"]["total_cash"] += cash_difference
     return dict["admin"]["total_cash"]
 
-# def gets_pets_sold():
+
+def get_pets_sold(dict):
+    no_pets_sold = dict["admin"]["pets_sold"]
+    return no_pets_sold
+
 
