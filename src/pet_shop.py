@@ -20,3 +20,6 @@ def get_pets_sold(dict):
     return no_pets_sold
 
 
+def increase_pets_sold(dict, num_of_pets_change):
+    dict["admin"]["pets_sold"] += num_of_pets_change
+    return dict["admin"]["pets_sold"]
