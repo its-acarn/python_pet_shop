@@ -48,3 +48,16 @@ def find_pet_by_name(pets_dict, pet_name):
     return pet_info
 
 
+def remove_pet_by_name(pets_dict, pet_name):
+    pet_list = pets_dict["pets"]
+    pet_index = None
+
+    for i, pets_dict in enumerate(pet_list):
+        if pets_dict["name"] == pet_name:
+            pet_index = i
+            del pet_list[pet_index]
+
+
+    
+
+
