@@ -57,12 +57,19 @@ def remove_pet_by_name(pets_dict, pet_name):
             pet_index = i
             del pet_list[pet_index]
 
+
 def add_pet_to_stock(pets_dict, new_pet_item):
     pet_list = pets_dict["pets"]
     return pet_list.append(new_pet_item)
 
+
 def get_customer_cash(customer):
     return customer["cash"]
-    
+
+def remove_customer_cash(customer, cash_to_remove):
+    new_cash = customer["cash"] - cash_to_remove
+    customer["cash"] = new_cash
+
+def get_customer_pet  
 
 
