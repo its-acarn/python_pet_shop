@@ -39,6 +39,12 @@ def get_pets_by_breed(pets_dict, pet_breed):
     return selected_breed_list
 
 
-# def find_pet_by_name(pets_dict, pet_name):
+def find_pet_by_name(pets_dict, pet_name):
+    pet_list = pets_dict["pets"]
+    pet_info = None
+    for pet in pet_list:
+        if pet["name"] == pet_name:
+            pet_info = pet
+    return pet_info
 
 
