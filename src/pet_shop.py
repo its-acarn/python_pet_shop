@@ -66,10 +66,15 @@ def add_pet_to_stock(pets_dict, new_pet_item):
 def get_customer_cash(customer):
     return customer["cash"]
 
+
 def remove_customer_cash(customer, cash_to_remove):
     new_cash = customer["cash"] - cash_to_remove
     customer["cash"] = new_cash
 
-def get_customer_pet  
+
+def get_customer_pet_count(customer):
+    return len(customer["pets"])
 
 
+def add_pet_to_customer(customer, new_pet_item):
+    return customer["pets"].append(new_pet_item)
