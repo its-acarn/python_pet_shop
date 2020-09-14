@@ -22,7 +22,7 @@ def get_pets_sold(pets_dict):
 
 def increase_pets_sold(pets_dict, num_of_pets_change):
     pets_dict["admin"]["pets_sold"] += num_of_pets_change
-    return pets_dict["admin"]["pets_sold"]
+    # return pets_dict["admin"]["pets_sold"]
 
 
 def get_stock_count(pets_dict):
@@ -77,4 +77,4 @@ def get_customer_pet_count(customer):
 
 
 def add_pet_to_customer(customer, new_pet_item):
-    return customer["pets"].append(new_pet_item)
+    customer["pets"].append(new_pet_item)
