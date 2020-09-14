@@ -12,7 +12,7 @@ def get_total_cash(dict):
 
 def add_or_remove_cash(dict, cash_difference):
     dict["admin"]["total_cash"] += cash_difference
-    return dict["admin"]["total_cash"]
+    # return dict["admin"]["total_cash"] #no return needed here!
 
 
 def get_pets_sold(dict):
