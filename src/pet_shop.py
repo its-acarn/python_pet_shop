@@ -50,12 +50,9 @@ def find_pet_by_name(pets_dict, pet_name):
 
 def remove_pet_by_name(pets_dict, pet_name):
     pet_list = pets_dict["pets"]
-    pet_index = None
-
-    for i, pet in enumerate(pet_list):
+    for pet in pet_list:
         if pet["name"] == pet_name:
-            pet_index = i
-            del pet_list[pet_index]
+            pet_list.remove(pet)
 
 
 def add_pet_to_stock(pets_dict, new_pet_item):
